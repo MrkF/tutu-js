@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>tutu test</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+</head>
+<body>
+<div class="b-page">
+    <div class="b-content">
+
+        <div class="b-left-column">
+
+            <div class="b-about-company">
+                <p class="about-company-par first-par">
+                    TutuRu - крупнейший сервис поиска, бронирования и покупки ж/д и авиабилетов
+                </p>
+                <p class="about-company-par">
+                   Наша цель проста - делать наших клиентов счастливыми,а их путешествия незабываемыми.
+                    Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц.
+                </p>
+            </div>
+
+        </div>
+        <div class="b-right-column">
+            <nav class="b-page-nav">
+                <ul>
+                    <li><a class="darkblue-link" href="">Личный кабинет</a></li>
+                    <li><a class="green-link" href="">Раздел 1</a></li>
+                    <li><a class="blue-link" href="">Раздел 2</a></li>
+                    <li><a class="red-link" href="">Раздел 3</a></li>
+                    <li><a class="black-link" href="">Раздел 4</a></li>
+                    <li><a class="blue-link" href="">Раздел 5</a></li>
+                </ul>
+            </nav>
+
+            <div class="b-registration">
+                <h2 class="registration-title"> Заполните форму</h2>
+                <div class="registration-progress">
+                    <ul>
+                        <li class="complete-step">1</li>
+                        <li class="complete-step">2</li>
+                        <li class="current-step">3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="b-general-info">
+                <form class="registration-form"  method="post">
+                    <fieldset>
+                        <legend>Общая информация</legend>
+                        <section class="row first">
+                            <div class="col">
+                                <label class="info-title" for="user_name">Фамилия</label>
+                                <input class="reg-input" type="text" id="user_name" name="user_name">
+                            </div>
+                            <div class="col">
+                                <label class="info-title for=" user_second_name">Имя</label>
+                                <input class="reg-input" type="text" id="user_second_name" name="user_second_name">
+                            </div>
+                            <div class="col">
+                                <label class="info-title for=" user_last_name">Отчество</label>
+                                <input class="reg-input" type="text" id="user_last_name" name="user_last_name">
+                            </div>
+
+                        </section>
+                        <section class="row second">
+                            <div class="col reverse">
+                                <p class="info-title">Меняли фамилию?</p>
+                                <label class="checkLabel active" id="trueCheck" for="yesCheck">Да</label>
+                                <input class="checkAnswer active" type="radio" name="yesno" id="yesCheck">
+
+                                <label class="checkLabel" id="falseCheck" for="yesCheck">Нет</label>
+                                <input class="checkAnswer" type="radio" name="yesno" id="noCheck">
+
+                            </div>
+
+                            <div class="col reverse">
+                                <p class="info-title">Пол</p>
+                                <label class="checkLabel active" id="maleOption" for="maleCheck">Муж.</label>
+                                <input class="checkAnswer" type="radio" name="male" id="maleCheck">
+
+                                <label class="checkLabel "  id="femaleOption" for="femaleCheck">Жен.</label>
+                                <input class="checkAnswer" type="radio" name="female" id="femaleCheck">
+                            </div>
+
+                            <div class="col reverse">
+                                <p class="info-title">Семейное положение</p>
+                                <select class="maritalStatus">
+                                    <option>Женат/замужем</option>
+                                    <option>Холост</option>
+                                </select>
+                            </div>
+
+
+                        </section>
+                        <section class="row third">
+                            <div class="col reverse r-margin">
+                                <p class="info-title">Гражданство</p>
+                                <select class="nationality">
+                                    <option>РФ</option>
+                                    <option>Китай</option>
+                                </select>
+                            </div>
+
+                            <div class="col reverse">
+                                <p class="info-title">Дата рождения</p>
+                                <select class="birthDate birthDay">
+                                    <option>11</option>
+                                    <option>2</option>
+                                </select>
+                                <select class="birthDate birthMonth">
+                                    <option>Июль</option>
+                                    <option>Август</option>
+                                </select>
+                                <select class="birthDate birthYear">
+                                    <option>2000</option>
+                                    <option>2001</option>
+                                </select>
+                            </div>
+
+
+                        </section>
+                        <section class="row fourth">
+                            <div class="col reverse non-basis">
+                                <p class="info-title">Место рождения</p>
+                                <input class="birthPlace" type="text">
+                                <p class="note non-basis">Например, Россия, Комсомольск-на-Амуре</p>
+                            </div>
+
+
+                        </section>
+                        <section class="row fifth">
+
+                            <div class="nav-bottom">
+                                    <button class="nav-button prev-button">Назад</button>
+                                    <button class="nav-button next-button">Далее</button>
+                            </div>
+
+
+                        </section>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+
+    $("#trueCheck").click(function () {
+        $(this).addClass('active');
+        $("#falseCheck").removeClass('active');
+    })
+    $("#falseCheck").click(function () {
+        $(this).addClass('active');
+        $("#trueCheck").removeClass('active');
+    })
+
+    $("#maleOption").click(function () {
+        $(this).addClass('active');
+        $("#femaleOption").removeClass('active');
+    })
+    $("#femaleOption").click(function () {
+        $(this).addClass('active');
+        $("#maleOption").removeClass('active');
+    })
+</script>
+
+</body>
+</html>

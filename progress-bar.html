@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>tutu test</title>
+</head>
+<body>
+
+
+<progress max="200" value="1"></progress>
+<div id="val"></div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var interval = 2,
+                updatesPerSecond = 1000/60,
+                progress =  $('progress'),
+                animator = function(){
+                    progress.val(progress.val()+interval);
+                    $('#val').text(progress.val());
+                    if ( progress.val()+interval < progress.attr('max')){
+                        setTimeout(animator, updatesPerSecond);
+                    } else {
+                        $('#val').text('Done');
+                        progress.val(progress.attr('max'));
+                    }
+                }
+
+        setTimeout(animator, updatesPerSecond);
+    });
+
+</script>
+
+
+</body>
+</html>
