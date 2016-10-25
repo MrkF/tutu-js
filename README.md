@@ -86,7 +86,16 @@
                 return link;
             }
     
-        var link = parseUrl("http://tutu.ru:8080/do/any.php?a=1&b[]=a&b[]=b#foo");
+         var link = parseUrl("http://tutu.ru:8080/do/any.php?a=1&b[]=a&b[]=b#foo");
+         
+            console.log(link.href)
+            console.log(link.hash)
+            console.log(link.port)
+            console.log(link.host)
+            console.log(link.protocol)
+            console.log(link.hostname)
+            console.log(link.pathname)
+            console.log(link.origin)
 ```
 ## Задача №2
 
