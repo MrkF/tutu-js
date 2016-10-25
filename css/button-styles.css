@@ -1,0 +1,25 @@
+.button {
+    display: inline-block;
+    background: grey;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    text-decoration:  none
+}
+
+.button:hover {
+    background: darkcyan;
+    color: black;
+}
+.button.s-btn {
+    width: 80px;
+}
+.button.l-btn {
+    width: 130px;
+}
+.button.b-btn {
+    width: 200px;
+}

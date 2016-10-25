@@ -1,0 +1,281 @@
+html {
+    min-height: 100%;
+}
+
+body {
+}
+
+.b-page {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.b-content {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    padding-top: 50px;
+}
+
+.b-content .b-left-column {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    margin-right: 40px;
+}
+
+.b-content .b-left-column .b-about-company {
+    padding-top: 145px;
+    font-size: 15px;
+}
+
+.b-content .b-left-column .first-par {
+    margin-bottom: 60px;
+}
+
+.b-content .b-right-column {
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 3px;
+}
+
+.b-right-column .b-page-nav {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 16px 0 rgba(39, 139, 168, 0.75);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.b-right-column .b-page-nav ul li {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 19px;
+}
+
+.b-right-column .b-registration {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.b-right-column .registration-title {
+    display: flex;
+}
+
+.b-right-column .registration-progress {
+    display: flex;
+}
+
+.b-right-column .registration-progress ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.b-right-column .registration-progress ul li {
+    padding: 0px 43px;
+    margin-right: 1px;
+    background: #f6f6f6;
+    list-style: none;
+    box-shadow: inset 0 -1px 10px rgba(0, 0, 0, 0.2);
+    font-size: 17px;
+}
+
+.b-right-column .registration-progress ul li:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.b-right-column .registration-progress ul li:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.b-right-column .registration-progress .complete-step {
+    background: #3bad19;
+    color: white;
+}
+
+.b-right-column .registration-progress .current-step {
+    background: #9dd005;
+    color: white;
+}
+
+.b-general-info {
+}
+
+.b-general-info fieldset {
+    padding: 0;
+    border: none;
+    border-top: 1px solid #cacaca;
+}
+
+.b-general-info fieldset legend {
+    color: #cacaca;
+    font-size: 15px;
+    font-style: italic;
+    padding-right: 20px;
+    margin-bottom: 25px;
+}
+
+.b-general-info .info-title {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.b-general-info .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.b-general-info .row.reverse {
+    align-content: center;
+    flex-wrap: wrap
+}
+
+.b-general-info .row.third {
+    justify-content: flex-start;
+}
+
+.b-general-info .row.fourth .non-basis {
+    flex-basis: 100%;
+}
+
+.reverse {
+    align-content: center;
+    flex-wrap: wrap
+}
+
+.b-general-info .col {
+    display: flex;
+    flex-basis: 200px;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.b-general-info .col:last-child {
+    margin-right: 0;
+}
+
+.b-general-info .col.reverse {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 200px;
+}
+
+.b-general-info .col.reverse p {
+    flex-basis: 190px;
+    margin: 0 0 8px 0;
+}
+
+.b-general-info .reg-input {
+    display: flex;
+}
+
+.b-general-info .checkAnswer {
+    display: none;
+}
+
+.b-general-info .checkLabel {
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.b-general-info .maritalStatus, .nationality, .birthPlace {
+    width: 100%;
+}
+
+.b-general-info .birthPlace {
+    margin-bottom: 5px;
+}
+
+.b-general-info .birthDate {
+    margin-right: 10px;
+}
+
+.b-general-info .note {
+    font-size: 12px;
+    color: #919191;
+}
+
+.b-general-info .col.r-margin {
+    margin-right: 80px;
+}
+
+.b-general-info .nav-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #f2f2f2;
+    padding: 27px 15px;
+}
+
+.b-general-info .nav-bottom .nav-button {
+    padding: 10px 35px;
+    border-radius: 20px;
+    box-shadow: inset 0 -1px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: white;
+    min-width: 140px;
+}
+
+.b-general-info .nav-bottom .next-button {
+    background: #9fd106;
+}
+
+.b-general-info .nav-bottom .prev-button {
+    background: #acacac;
+}
+
+.b-general-info .nav-bottom .next-button::after {
+    content: '\2192';
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.b-general-info .nav-bottom .prev-button::before {
+    content: '\2190';
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+button,
+button:active,
+button:focus {
+    outline: none;
+    border: none;
+}
+
+.active {
+    color: white;
+    border-radius: 5px;
+    background: #8cb903;
+}
+
+.darkblue-link {
+    color: darkblue;
+}
+
+.blue-link {
+    color: blue;
+}
+
+.green-link {
+    color: green;
+}
+
+.black-link {
+    color: black;
+}
+
+.red-link {
+    color: red;
+}
+
